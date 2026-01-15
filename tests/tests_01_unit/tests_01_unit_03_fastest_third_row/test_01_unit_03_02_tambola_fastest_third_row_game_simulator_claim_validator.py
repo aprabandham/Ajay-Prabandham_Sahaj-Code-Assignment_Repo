@@ -194,7 +194,7 @@ def test_tambola_game_fastest_third_row_simulator_fastest_third_row_technically_
     
     ticket_gen = FastestThirdRowTicketGenerator(call_seq, num_players, game_type, claim_player_index, claiming_player_type)
     tambola_game_simulator = TambolaFastestThirdRowGameSimulator(game_type, call_seq_len_gen, call_seq_gen, player_gen, ticket_gen, claim_validator, caller, player_index_list, game_simulator_file_logger)
-    validation_result = tambola_game_simulator.validate_fastest_row_technically_inaccurate_claim()
+    validation_result = tambola_game_simulator.validate_technically_inaccurate_claim()
 
     assert not validation_result
 
@@ -207,7 +207,7 @@ def test_tambola_fastest_third_row_game_simulator_fastest_third_row_technically_
     
     ticket_gen = FastestThirdRowTicketGenerator(call_seq, num_players, game_type, claim_player_index, claiming_player_type)
     tambola_game_simulator = TambolaFastestThirdRowGameSimulator(game_type, call_seq_len_gen, call_seq_gen, player_gen, ticket_gen, claim_validator, caller, player_index_list, game_simulator_file_logger)
-    validation_result = tambola_game_simulator.validate_fastest_row_technically_accurate_but_invalid_claim()
+    validation_result = tambola_game_simulator.validate_technically_accurate_but_invalid_claim()
 
     assert not validation_result
 
@@ -220,6 +220,6 @@ def test_tambola_fastest_third_row_game_simulator_fastest_third_row_technically_
     
     ticket_gen = FastestThirdRowTicketGenerator(call_seq, num_players, game_type, claim_player_index, claiming_player_type)
     tambola_game_simulator = TambolaFastestThirdRowGameSimulator(game_type, call_seq_len_gen, call_seq_gen, player_gen, ticket_gen, claim_validator, caller, player_index_list, game_simulator_file_logger)
-    validation_result = tambola_game_simulator.validate_fastest_row_technically_accurate_and_valid_claim()
+    validation_result = tambola_game_simulator.validate_technically_accurate_and_valid_claim()
 
     assert validation_result

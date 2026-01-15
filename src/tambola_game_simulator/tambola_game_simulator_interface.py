@@ -53,13 +53,13 @@ class TambolaGameSimulatorInterface(ABC):
             logger.log(obj)
     
     @abstractmethod
-    def validate_fastest_row_technically_inaccurate_claim(self):
+    def validate_technically_inaccurate_claim(self):
         pass
 
     @abstractmethod
-    def validate_fastest_row_technically_accurate_but_invalid_claim(self):
+    def validate_technically_accurate_but_invalid_claim(self):
         pass
 
     @abstractmethod
-    def validate_fastest_row_technically_accurate_and_valid_claim(self):
+    def validate_technically_accurate_and_valid_claim(self):
         pass

@@ -81,6 +81,12 @@ possible_claiming_player_types = {
     "TECHNICALLY_ACCURATE_AND_VALID": 3
 }
 
+possible_player_claim_labels = {
+    possible_claiming_player_types["TECHNICALLY_INACCURATE"]: "TECHNICALLY INACCURATE",
+    possible_claiming_player_types["TECHNICALLY_ACCURATE_BUT_INVALID"]: "TECHNICALLY ACCURATE BUT INVALID",
+    possible_claiming_player_types["TECHNICALLY_ACCURATE_AND_VALID"]: "TECHNICALLY ACCURATE AND VALID"
+}
+
 possible_claiming_player_technically_inaccurate_sub_types = {
     "TECHNICALLY_INACCURATE_TYPE_1": 1,
     "TECHNICALLY_INACCURATE_TYPE_2": 2,

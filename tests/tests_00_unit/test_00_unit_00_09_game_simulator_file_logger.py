@@ -2,7 +2,6 @@ from src.tambola_game_simulator.tambola_game_simulator_interface import TambolaG
 from src.game_simulator_logger.game_simulator_file_logger import GameSimulatorFileLogger
 import time
 from pathlib import Path
-import os
 
 class TestGameSimulator(TambolaGameSimulatorInterface):
     simulation_run_count = 0
@@ -62,13 +61,13 @@ class TestGameSimulator(TambolaGameSimulatorInterface):
         with self.game_simulator_file_logger as logger:
             logger.log(self)
 
-    def validate_fastest_row_technically_inaccurate_claim(self):
+    def validate_technically_inaccurate_claim(self):
         print(f"Inside TestGameSimulator::validate_fastest_row_technically_inaccurate_claim()")
 
-    def validate_fastest_row_technically_accurate_but_invalid_claim(self):
+    def validate_technically_accurate_but_invalid_claim(self):
         print(f"Inside TestGameSimulator::validate_fastest_row_technically_accurate_but_invalid_claim()")
 
-    def validate_fastest_row_technically_accurate_and_valid_claim(self):
+    def validate_technically_accurate_and_valid_claim(self):
         print(f"Inside TestGameSimulator::validate_fastest_row_technically_accurate_and_valid_claim()")
 
 def _create_logging_directory():
