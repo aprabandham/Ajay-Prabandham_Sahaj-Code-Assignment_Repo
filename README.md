@@ -14,5 +14,5 @@ If you're curious to download and execute what's committed currently, please do 
 As recommended:
 
 1. I've followed TDD
-2. The E2E demonstration - inputs are of the form of a set of Unit test files - 5 of them, one for each kind og Tambola Game Simulator.
+2. The E2E demonstration - inputs are of the form of a set of Unit test files - 5 of them, one for each game-specific kind of Tambola Game Simulator.
 3. The relevant output log files will appear in the logs/ folder, on running the tests.
