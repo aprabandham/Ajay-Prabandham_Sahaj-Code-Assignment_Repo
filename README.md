@@ -7,8 +7,8 @@ Issues:
 
 If you're curious to download and execute what's committed currently, please do the following:
 
-1. Go into the *tambola_claim_validator* directory, which has gherkin/, tests/, and src/ sub-dirs.
-2. here, run *pip install -r requirements.txt*
+1. Be in the root folder of the repo.
+2. Here, run *pip install -r requirements.txt*
 3. Next, run *pytest* - which executes all the unit tests.
 
 As recommended:
